@@ -210,3 +210,47 @@ This project is released under the **MIT License**. Note that fine-tuned models 
 ---
 
 *Built with 🔥 by the Code LLM Forge community*
+
+---
+
+## 🆕 Gemma 4 — Strong Alternative Base Model
+
+After deep research, **Gemma 4** (released April 2026) is a compelling alternative to Qwen2.5-Coder:
+
+### Gemma 4 Model Family
+
+| Model | Total Params | Active Params | VRAM (Q4) | LiveCodeBench v6 | Tool Calling (τ2) |
+|-------|-------------|---------------|-----------|-------------------|-------------------|
+| **Gemma 4 E2B** | 5.1B | 2.3B | ~3.2 GB | 44.0% | 42.2% |
+| **Gemma 4 E4B** | 8B | 4.5B | ~5 GB | 52.0% | 42.2% |
+| **Gemma 4 26B MoE** | 26B | 3.8B | ~15.6 GB | 77.1% | 68.2% |
+| **Gemma 4 31B Dense** | 31B | 31B | ~17.4 GB | 80.0% | 76.9% |
+
+### Why Gemma 4 is Interesting
+
+1. **Native tool calling** with dedicated control tokens (`<|tool_call>`, `<|tool_response>`)
+2. **Thinking mode** — built-in chain-of-thought reasoning (toggle on/off)
+3. **128K-256K context** windows across all sizes
+4. **Apache 2.0 license** — fully open commercial use
+5. **Per-Layer Embeddings (PLE)** architecture in E2B/E4B maximizes parameter efficiency
+6. **Multimodal** — supports images, audio, video (not just text/code)
+
+### Gemma 4 E2B: The Sleeper Hit for Tool Calling
+
+The 2B effective parameter model is surprisingly capable:
+- 44% on LiveCodeBench v6 (competitive with much larger models)
+- Native tool-calling tokens baked into architecture
+- Runs on **3.2 GB VRAM** quantized — even works on laptops
+- Thinking mode for step-by-step reasoning
+- Fine-tuning works on **8 GB VRAM** with LoRA via Unsloth
+
+### When to Choose Gemma 4 vs Qwen2.5-Coder
+
+| Choose **Qwen2.5-Coder-7B** when... | Choose **Gemma 4 E4B** when... |
+|--------------------------------------|-------------------------------|
+| Pure coding performance is #1 priority | Tool calling is #1 priority |
+| You need the largest fine-tuning community | You want multimodal (images/audio/video) |
+| You want proven GGUF ecosystem | You want built-in thinking mode |
+| Maximum HumanEval/MBPP scores | You need Apache 2.0 (fully open) |
+
+**The mega notebook supports both** — just change `BASE_MODEL` in Section 0.
