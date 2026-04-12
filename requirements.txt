@@ -1,0 +1,15 @@
+torch>=2.1.0
+transformers>=4.45.0
+datasets>=2.16.0
+peft>=0.7.0
+trl>=0.7.0
+accelerate>=0.25.0
+bitsandbytes>=0.43.0
+unsloth[colab-new]>=2024.8
+wandb
+evalplus
+scipy
+numpy
+huggingface_hub
+sentencepiece
+protobuf

@@ -1,0 +1,26 @@
+# Benchmarking Configuration
+evaluation:
+  temperature: 0.0          # Deterministic for pass@1
+  max_new_tokens: 1024
+  num_runs: 3               # Minimum 3 runs, report mean ± std
+  confidence_level: 0.95    # For Wilson score CI
+
+tier1_benchmarks:           # Zero contamination
+  - livecodebench           # Fresh competition problems
+  - custom_private           # Our private benchmark
+  - tool_calling_bench       # Custom function-calling eval
+
+tier2_benchmarks:           # Low contamination
+  - swe_bench_lite           # Real GitHub issues
+  - bigcodebench             # Diverse practical problems
+  - cruxeval                 # Compositional reasoning
+
+tier3_benchmarks:           # Reference only (assume contaminated)
+  - humaneval_plus
+  - mbpp_plus
+
+contamination_detection:
+  enabled: true
+  method: "ngram_overlap"    # Also consider Min-K% for production
+  ngram_size: 10
+  threshold: 0.8             # Flag if >80% overlap

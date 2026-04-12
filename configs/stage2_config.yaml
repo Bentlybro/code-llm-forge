@@ -1,0 +1,27 @@
+# Stage 2: Tool Calling Specialization Config
+model:
+  name: "outputs/stage1_code_reasoning/merged_model"
+  fallback: "Qwen/Qwen2.5-Coder-7B-Instruct"
+  max_seq_length: 4096
+  load_in_4bit: true
+
+lora:
+  rank: 16        # Lower rank - more focused task
+  alpha: 16
+  dropout: 0.05
+
+training:
+  batch_size: 2
+  gradient_accumulation_steps: 8
+  learning_rate: 1e-4   # Lower LR to preserve Stage 1 skills
+  num_epochs: 2
+  warmup_ratio: 0.1     # Longer warmup for stability
+  weight_decay: 0.01
+  lr_scheduler: cosine
+
+dataset:
+  mix_ratio:
+    hermes_fc: 0.60
+    glaive_fc: 0.25
+    gorilla_openfunctions: 0.15
+  total_target: 180000
