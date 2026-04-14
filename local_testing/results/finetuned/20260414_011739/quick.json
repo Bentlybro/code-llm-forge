@@ -1,0 +1,387 @@
+{
+  "model": "Gemma4-E4B Finetuned",
+  "summary": {
+    "function_calling": {
+      "passed": 4,
+      "total": 15,
+      "pct": 0.26666666666666666
+    },
+    "coding": {
+      "passed": 2,
+      "total": 15,
+      "pct": 0.13333333333333333
+    },
+    "reasoning": {
+      "passed": 9,
+      "total": 15,
+      "pct": 0.6
+    },
+    "overall": {
+      "passed": 15,
+      "total": 45,
+      "pct": 0.3333333333333333
+    }
+  },
+  "results": [
+    {
+      "id": "fc_simple_weather",
+      "category": "function_calling",
+      "passed": false,
+      "score": 0.0,
+      "detail": "0 call(s): []",
+      "latency": 2.11
+    },
+    {
+      "id": "fc_simple_stock",
+      "category": "function_calling",
+      "passed": false,
+      "score": 0.0,
+      "detail": "0 call(s): []",
+      "latency": 1.35
+    },
+    {
+      "id": "fc_args_email",
+      "category": "function_calling",
+      "passed": false,
+      "score": 0.0,
+      "detail": "0 call(s): []",
+      "latency": 1.68
+    },
+    {
+      "id": "fc_args_search",
+      "category": "function_calling",
+      "passed": false,
+      "score": 0.0,
+      "detail": "0 call(s): []",
+      "latency": 8.8
+    },
+    {
+      "id": "fc_negative_math",
+      "category": "function_calling",
+      "passed": true,
+      "score": 1.0,
+      "detail": "0 call(s): []",
+      "latency": 0.36
+    },
+    {
+      "id": "fc_negative_explanation",
+      "category": "function_calling",
+      "passed": true,
+      "score": 1.0,
+      "detail": "0 call(s): []",
+      "latency": 2.86
+    },
+    {
+      "id": "fc_parallel_weather",
+      "category": "function_calling",
+      "passed": false,
+      "score": 0.0,
+      "detail": "0 call(s): []",
+      "latency": 1.32
+    },
+    {
+      "id": "fc_parallel_mixed",
+      "category": "function_calling",
+      "passed": false,
+      "score": 0.0,
+      "detail": "0 call(s): []",
+      "latency": 2.22
+    },
+    {
+      "id": "fc_relevance_no_match",
+      "category": "function_calling",
+      "passed": true,
+      "score": 1.0,
+      "detail": "0 call(s): []",
+      "latency": 0.73
+    },
+    {
+      "id": "fc_enum_validation",
+      "category": "function_calling",
+      "passed": false,
+      "score": 0.0,
+      "detail": "0 call(s): []",
+      "latency": 1.03
+    },
+    {
+      "id": "fc_nested_args",
+      "category": "function_calling",
+      "passed": false,
+      "score": 0.0,
+      "detail": "0 call(s): []",
+      "latency": 1.26
+    },
+    {
+      "id": "fc_parallel_triple",
+      "category": "function_calling",
+      "passed": false,
+      "score": 0.0,
+      "detail": "0 call(s): []",
+      "latency": 1.13
+    },
+    {
+      "id": "fc_many_tools_select",
+      "category": "function_calling",
+      "passed": false,
+      "score": 0.0,
+      "detail": "0 call(s): []",
+      "latency": 0.2
+    },
+    {
+      "id": "fc_optional_params",
+      "category": "function_calling",
+      "passed": false,
+      "score": 0.0,
+      "detail": "0 call(s): []",
+      "latency": 5.5
+    },
+    {
+      "id": "fc_negative_ambiguous",
+      "category": "function_calling",
+      "passed": true,
+      "score": 1.0,
+      "detail": "0 call(s): []",
+      "latency": 7.64
+    },
+    {
+      "id": "code_palindrome",
+      "category": "coding",
+      "passed": true,
+      "score": 1.0,
+      "detail": "PASS",
+      "latency": 1.66
+    },
+    {
+      "id": "code_fibonacci",
+      "category": "coding",
+      "passed": false,
+      "score": 0.0,
+      "detail": "File \"C:\\Users\\Bently\\AppData\\Local\\Temp\\tmpbp6nzcak.py\", line 3\n    return memo[n]\n    ^\nIndentationError: expected an ",
+      "latency": 1.95
+    },
+    {
+      "id": "code_two_sum",
+      "category": "coding",
+      "passed": false,
+      "score": 0.0,
+      "detail": "File \"C:\\Users\\Bently\\AppData\\Local\\Temp\\tmpkkgzrfqk.py\", line 4\n    if target - num in num_map:\n    ^\nIndentationError:",
+      "latency": 1.91
+    },
+    {
+      "id": "code_valid_brackets",
+      "category": "coding",
+      "passed": false,
+      "score": 0.0,
+      "detail": "File \"C:\\Users\\Bently\\AppData\\Local\\Temp\\tmpze9azqkl.py\", line 5\n    if char in mapping.values():\n    ^\nIndentationError",
+      "latency": 2.46
+    },
+    {
+      "id": "code_flatten",
+      "category": "coding",
+      "passed": false,
+      "score": 0.0,
+      "detail": "File \"C:\\Users\\Bently\\AppData\\Local\\Temp\\tmphet39q58.py\", line 3\n    for sublist in lst:\n    ^\nIndentationError: expecte",
+      "latency": 1.16
+    },
+    {
+      "id": "code_longest_consecutive",
+      "category": "coding",
+      "passed": false,
+      "score": 0.0,
+      "detail": "File \"C:\\Users\\Bently\\AppData\\Local\\Temp\\tmpwz8px85y.py\", line 5\n    if num - 1 not in s:\n    ^\nIndentationError: expect",
+      "latency": 2.56
+    },
+    {
+      "id": "code_group_anagrams",
+      "category": "coding",
+      "passed": false,
+      "score": 0.0,
+      "detail": "File \"C:\\Users\\Bently\\AppData\\Local\\Temp\\tmp48nlxm5n.py\", line 4\n    sorted_s = \"\".join(sorted(s))\n    ^\nIndentationErro",
+      "latency": 2.09
+    },
+    {
+      "id": "code_binary_search",
+      "category": "coding",
+      "passed": false,
+      "score": 0.0,
+      "detail": "File \"C:\\Users\\Bently\\AppData\\Local\\Temp\\tmp2fxyx7lw.py\", line 4\n    mid = left + (right - left) // 2\n    ^\nIndentationE",
+      "latency": 2.65
+    },
+    {
+      "id": "code_roman_numerals",
+      "category": "coding",
+      "passed": false,
+      "score": 0.0,
+      "detail": "SyntaxError: Non-UTF-8 code starting with '\\x96' in file C:\\Users\\Bently\\AppData\\Local\\Temp\\tmp7pgkguo0.py on line 3, bu",
+      "latency": 4.7
+    },
+    {
+      "id": "code_lru_cache",
+      "category": "coding",
+      "passed": false,
+      "score": 0.0,
+      "detail": "Traceback (most recent call last):\n  File \"C:\\Users\\Bently\\AppData\\Local\\Temp\\tmp61hu0z1x.py\", line 25, in <module>\n    ",
+      "latency": 6.27
+    },
+    {
+      "id": "code_merge_intervals",
+      "category": "coding",
+      "passed": false,
+      "score": 0.0,
+      "detail": "File \"C:\\Users\\Bently\\AppData\\Local\\Temp\\tmpk9q7pd4_.py\", line 13\n    merged.append([current_start, current_end]))\n     ",
+      "latency": 3.86
+    },
+    {
+      "id": "code_matrix_rotate",
+      "category": "coding",
+      "passed": false,
+      "score": 0.0,
+      "detail": "File \"C:\\Users\\Bently\\AppData\\Local\\Temp\\tmpnuxosxpu.py\", line 4\n    for j in range(i, n - i):\n    ^\nIndentationError: e",
+      "latency": 3.91
+    },
+    {
+      "id": "code_trie",
+      "category": "coding",
+      "passed": true,
+      "score": 1.0,
+      "detail": "PASS",
+      "latency": 9.39
+    },
+    {
+      "id": "code_max_subarray",
+      "category": "coding",
+      "passed": false,
+      "score": 0.0,
+      "detail": "File \"C:\\Users\\Bently\\AppData\\Local\\Temp\\tmpayj28bwl.py\", line 5\n    current_max = max(nums[i], current_max + nums[i])\n ",
+      "latency": 3.2
+    },
+    {
+      "id": "code_word_frequency",
+      "category": "coding",
+      "passed": false,
+      "score": 0.0,
+      "detail": "File \"C:\\Users\\Bently\\AppData\\Local\\Temp\\tmprvph5vaz.py\", line 12\n    top_k.sort(key=lambda x: (-x[1], x[0])))\n         ",
+      "latency": 5.43
+    },
+    {
+      "id": "reason_balls",
+      "category": "reasoning",
+      "passed": true,
+      "score": 1.0,
+      "detail": "2",
+      "latency": 0.15
+    },
+    {
+      "id": "reason_fence",
+      "category": "reasoning",
+      "passed": true,
+      "score": 1.0,
+      "detail": "Let the width of the rectangle be $w$ and the length be $l$. The total length of the fencing required is $2w + l = 120$ meters. We want to maximize the area $A = w \\times l$ subject to this constraint",
+      "latency": 8.46
+    },
+    {
+      "id": "reason_coins",
+      "category": "reasoning",
+      "passed": false,
+      "score": 0.0,
+      "detail": "No, you cannot always find the fake coin with only one weighing on a balance scale.",
+      "latency": 0.63
+    },
+    {
+      "id": "reason_gsm_apples",
+      "category": "reasoning",
+      "passed": false,
+      "score": 0.0,
+      "detail": "18",
+      "latency": 0.14
+    },
+    {
+      "id": "reason_gsm_train",
+      "category": "reasoning",
+      "passed": false,
+      "score": 0.0,
+      "detail": "18",
+      "latency": 0.15
+    },
+    {
+      "id": "reason_code_trace",
+      "category": "reasoning",
+      "passed": true,
+      "score": 1.0,
+      "detail": "13",
+      "latency": 0.21
+    },
+    {
+      "id": "reason_code_trace2",
+      "category": "reasoning",
+      "passed": true,
+      "score": 1.0,
+      "detail": "[1, 9, 25]",
+      "latency": 0.4
+    },
+    {
+      "id": "reason_logic",
+      "category": "reasoning",
+      "passed": true,
+      "score": 1.0,
+      "detail": "Yes.",
+      "latency": 0.15
+    },
+    {
+      "id": "reason_probability",
+      "category": "reasoning",
+      "passed": true,
+      "score": 1.0,
+      "detail": "There are a total of 5 balls in the bag (3 red and 2 blue).\nThe number of red balls is 3.\nThe probability of drawing a red ball is the number of red balls divided by the total number of balls.\nProbabi",
+      "latency": 2.88
+    },
+    {
+      "id": "reason_big_o",
+      "category": "reasoning",
+      "passed": true,
+      "score": 1.0,
+      "detail": "O(log n)",
+      "latency": 0.23
+    },
+    {
+      "id": "reason_multi_step",
+      "category": "reasoning",
+      "passed": false,
+      "score": 0.0,
+      "detail": "$12",
+      "latency": 0.18
+    },
+    {
+      "id": "reason_spatial",
+      "category": "reasoning",
+      "passed": true,
+      "score": 1.0,
+      "detail": "East",
+      "latency": 0.12
+    },
+    {
+      "id": "reason_code_trace3",
+      "category": "reasoning",
+      "passed": false,
+      "score": 0.0,
+      "detail": "[('e', 4), ('h', 0), ('l', 2), ('l', 3), ('o', 1)]",
+      "latency": 1.29
+    },
+    {
+      "id": "reason_sequence",
+      "category": "reasoning",
+      "passed": true,
+      "score": 1.0,
+      "detail": "42",
+      "latency": 0.18
+    },
+    {
+      "id": "reason_constraint",
+      "category": "reasoning",
+      "passed": false,
+      "score": 0.0,
+      "detail": "2nd",
+      "latency": 0.17
+    }
+  ]
+}

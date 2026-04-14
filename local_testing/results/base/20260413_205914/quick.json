@@ -1,0 +1,267 @@
+{
+  "model": "Gemma4-E4B Base",
+  "summary": {
+    "function_calling": {
+      "passed": 6,
+      "total": 10,
+      "pct": 0.6
+    },
+    "coding": {
+      "passed": 8,
+      "total": 10,
+      "pct": 0.8
+    },
+    "reasoning": {
+      "passed": 9,
+      "total": 10,
+      "pct": 0.9
+    },
+    "overall": {
+      "passed": 23,
+      "total": 30,
+      "pct": 0.7666666666666667
+    }
+  },
+  "results": [
+    {
+      "id": "fc_simple_weather",
+      "category": "function_calling",
+      "passed": true,
+      "score": 1.0,
+      "detail": "1 call(s): ['get_weather']",
+      "latency": 7.45
+    },
+    {
+      "id": "fc_simple_stock",
+      "category": "function_calling",
+      "passed": true,
+      "score": 1.0,
+      "detail": "1 call(s): ['get_stock_price']",
+      "latency": 4.65
+    },
+    {
+      "id": "fc_args_email",
+      "category": "function_calling",
+      "passed": true,
+      "score": 1.0,
+      "detail": "1 call(s): ['send_email']",
+      "latency": 6.41
+    },
+    {
+      "id": "fc_args_search",
+      "category": "function_calling",
+      "passed": true,
+      "score": 1.0,
+      "detail": "1 call(s): ['web_search']",
+      "latency": 4.72
+    },
+    {
+      "id": "fc_negative_math",
+      "category": "function_calling",
+      "passed": false,
+      "score": 0.0,
+      "detail": "1 call(s): ['calculator']",
+      "latency": 4.3
+    },
+    {
+      "id": "fc_negative_explanation",
+      "category": "function_calling",
+      "passed": false,
+      "score": 0.0,
+      "detail": "1 call(s): ['run_code']",
+      "latency": 36.32
+    },
+    {
+      "id": "fc_parallel_weather",
+      "category": "function_calling",
+      "passed": false,
+      "score": 0.0,
+      "detail": "1 call(s): ['get_weather']",
+      "latency": 5.1
+    },
+    {
+      "id": "fc_parallel_mixed",
+      "category": "function_calling",
+      "passed": false,
+      "score": 0.0,
+      "detail": "1 call(s): ['get_weather']",
+      "latency": 6.37
+    },
+    {
+      "id": "fc_relevance_no_match",
+      "category": "function_calling",
+      "passed": true,
+      "score": 1.0,
+      "detail": "0 call(s): []",
+      "latency": 5.42
+    },
+    {
+      "id": "fc_enum_validation",
+      "category": "function_calling",
+      "passed": true,
+      "score": 1.0,
+      "detail": "1 call(s): ['get_weather']",
+      "latency": 5.86
+    },
+    {
+      "id": "code_palindrome",
+      "category": "coding",
+      "passed": true,
+      "score": 1.0,
+      "detail": "PASS",
+      "latency": 3.18
+    },
+    {
+      "id": "code_fibonacci",
+      "category": "coding",
+      "passed": true,
+      "score": 1.0,
+      "detail": "PASS",
+      "latency": 22.5
+    },
+    {
+      "id": "code_two_sum",
+      "category": "coding",
+      "passed": true,
+      "score": 1.0,
+      "detail": "PASS",
+      "latency": 15.25
+    },
+    {
+      "id": "code_valid_brackets",
+      "category": "coding",
+      "passed": true,
+      "score": 1.0,
+      "detail": "PASS",
+      "latency": 20.27
+    },
+    {
+      "id": "code_flatten",
+      "category": "coding",
+      "passed": true,
+      "score": 1.0,
+      "detail": "PASS",
+      "latency": 13.34
+    },
+    {
+      "id": "code_longest_consecutive",
+      "category": "coding",
+      "passed": false,
+      "score": 0.0,
+      "detail": "Traceback (most recent call last):\n  File \"C:\\Users\\Bently\\AppData\\Local\\Temp\\tmpcb57q9n1.py\", line 21, in <module>\n    ",
+      "latency": 24.9
+    },
+    {
+      "id": "code_group_anagrams",
+      "category": "coding",
+      "passed": false,
+      "score": 0.0,
+      "detail": "File \"C:\\Users\\Bently\\AppData\\Local\\Temp\\tmp5fzvh4c6.py\", line 3\n    def group_anagrams(strs: list[str]) -> list[list[\n ",
+      "latency": 24.87
+    },
+    {
+      "id": "code_binary_search",
+      "category": "coding",
+      "passed": true,
+      "score": 1.0,
+      "detail": "PASS",
+      "latency": 7.42
+    },
+    {
+      "id": "code_roman_numerals",
+      "category": "coding",
+      "passed": true,
+      "score": 1.0,
+      "detail": "PASS",
+      "latency": 23.42
+    },
+    {
+      "id": "code_lru_cache",
+      "category": "coding",
+      "passed": true,
+      "score": 1.0,
+      "detail": "PASS",
+      "latency": 24.7
+    },
+    {
+      "id": "reason_balls",
+      "category": "reasoning",
+      "passed": true,
+      "score": 1.0,
+      "detail": "2",
+      "latency": 13.93
+    },
+    {
+      "id": "reason_fence",
+      "category": "reasoning",
+      "passed": false,
+      "score": 0.0,
+      "detail": "This is an optimization problem. We need to maximize the area ($A$) given a fixed perimeter ($P$).\n\n1.  **Define Variables:**\n    *   Let $W$ be the width (the two sides perpendicular to the barn).\n  ",
+      "latency": 25.53
+    },
+    {
+      "id": "reason_coins",
+      "category": "reasoning",
+      "passed": true,
+      "score": 1.0,
+      "detail": "Yes. By weighing any two coins against each other, the lighter coin is immediately identified as the fake one, or if they balance, the third coin must be the fake one.",
+      "latency": 13.99
+    },
+    {
+      "id": "reason_gsm_apples",
+      "category": "reasoning",
+      "passed": true,
+      "score": 1.0,
+      "detail": "30",
+      "latency": 4.18
+    },
+    {
+      "id": "reason_gsm_train",
+      "category": "reasoning",
+      "passed": true,
+      "score": 1.0,
+      "detail": "120",
+      "latency": 11.91
+    },
+    {
+      "id": "reason_code_trace",
+      "category": "reasoning",
+      "passed": true,
+      "score": 1.0,
+      "detail": "13",
+      "latency": 8.88
+    },
+    {
+      "id": "reason_code_trace2",
+      "category": "reasoning",
+      "passed": true,
+      "score": 1.0,
+      "detail": "[1, 9, 25]",
+      "latency": 0.36
+    },
+    {
+      "id": "reason_logic",
+      "category": "reasoning",
+      "passed": true,
+      "score": 1.0,
+      "detail": "Yes",
+      "latency": 6.67
+    },
+    {
+      "id": "reason_probability",
+      "category": "reasoning",
+      "passed": true,
+      "score": 1.0,
+      "detail": "The probability is calculated by dividing the number of favorable outcomes (red balls) by the total number of possible outcomes (all balls).\n\n*   **Number of red balls:** 3\n*   **Total number of balls",
+      "latency": 9.95
+    },
+    {
+      "id": "reason_big_o",
+      "category": "reasoning",
+      "passed": true,
+      "score": 1.0,
+      "detail": "O(log n)",
+      "latency": 0.21
+    }
+  ]
+}

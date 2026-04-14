@@ -1,0 +1,12 @@
+openai>=1.0.0
+rich>=13.0.0
+pandas>=2.0.0
+
+# Function calling benchmark
+bfcl-eval
+
+# Code generation benchmark
+evalplus
+
+# Reasoning benchmark
+lm-eval[api]

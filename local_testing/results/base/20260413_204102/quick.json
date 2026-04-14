@@ -1,0 +1,267 @@
+{
+  "model": "Gemma4-E4B Base",
+  "summary": {
+    "function_calling": {
+      "passed": 7,
+      "total": 10,
+      "pct": 0.7
+    },
+    "coding": {
+      "passed": 8,
+      "total": 10,
+      "pct": 0.8
+    },
+    "reasoning": {
+      "passed": 3,
+      "total": 10,
+      "pct": 0.3
+    },
+    "overall": {
+      "passed": 18,
+      "total": 30,
+      "pct": 0.6
+    }
+  },
+  "results": [
+    {
+      "id": "fc_simple_weather",
+      "category": "function_calling",
+      "passed": true,
+      "score": 1.0,
+      "detail": "1 call(s): ['get_weather']",
+      "latency": 7.16
+    },
+    {
+      "id": "fc_simple_stock",
+      "category": "function_calling",
+      "passed": true,
+      "score": 1.0,
+      "detail": "1 call(s): ['get_stock_price']",
+      "latency": 4.3
+    },
+    {
+      "id": "fc_args_email",
+      "category": "function_calling",
+      "passed": true,
+      "score": 1.0,
+      "detail": "1 call(s): ['send_email']",
+      "latency": 5.19
+    },
+    {
+      "id": "fc_args_search",
+      "category": "function_calling",
+      "passed": true,
+      "score": 1.0,
+      "detail": "1 call(s): ['web_search']",
+      "latency": 4.24
+    },
+    {
+      "id": "fc_negative_math",
+      "category": "function_calling",
+      "passed": false,
+      "score": 0.0,
+      "detail": "1 call(s): ['calculator']",
+      "latency": 3.64
+    },
+    {
+      "id": "fc_negative_explanation",
+      "category": "function_calling",
+      "passed": true,
+      "score": 1.0,
+      "detail": "0 call(s): []",
+      "latency": 11.34
+    },
+    {
+      "id": "fc_parallel_weather",
+      "category": "function_calling",
+      "passed": false,
+      "score": 0.0,
+      "detail": "1 call(s): ['get_weather']",
+      "latency": 3.89
+    },
+    {
+      "id": "fc_parallel_mixed",
+      "category": "function_calling",
+      "passed": false,
+      "score": 0.0,
+      "detail": "1 call(s): ['get_weather']",
+      "latency": 5.08
+    },
+    {
+      "id": "fc_relevance_no_match",
+      "category": "function_calling",
+      "passed": true,
+      "score": 1.0,
+      "detail": "0 call(s): []",
+      "latency": 4.25
+    },
+    {
+      "id": "fc_enum_validation",
+      "category": "function_calling",
+      "passed": true,
+      "score": 1.0,
+      "detail": "1 call(s): ['get_weather']",
+      "latency": 4.78
+    },
+    {
+      "id": "code_palindrome",
+      "category": "coding",
+      "passed": true,
+      "score": 1.0,
+      "detail": "PASS",
+      "latency": 3.0
+    },
+    {
+      "id": "code_fibonacci",
+      "category": "coding",
+      "passed": true,
+      "score": 1.0,
+      "detail": "PASS",
+      "latency": 19.89
+    },
+    {
+      "id": "code_two_sum",
+      "category": "coding",
+      "passed": true,
+      "score": 1.0,
+      "detail": "PASS",
+      "latency": 15.84
+    },
+    {
+      "id": "code_valid_brackets",
+      "category": "coding",
+      "passed": true,
+      "score": 1.0,
+      "detail": "PASS",
+      "latency": 20.98
+    },
+    {
+      "id": "code_flatten",
+      "category": "coding",
+      "passed": true,
+      "score": 1.0,
+      "detail": "PASS",
+      "latency": 12.96
+    },
+    {
+      "id": "code_longest_consecutive",
+      "category": "coding",
+      "passed": false,
+      "score": 0.0,
+      "detail": "File \"C:\\Users\\Bently\\AppData\\Local\\Temp\\tmp43hu0ncp.py\", line 1\n    ```python\n    ^\nSyntaxError: invalid syntax",
+      "latency": 23.42
+    },
+    {
+      "id": "code_group_anagrams",
+      "category": "coding",
+      "passed": false,
+      "score": 0.0,
+      "detail": "File \"C:\\Users\\Bently\\AppData\\Local\\Temp\\tmpbixhl69r.py\", line 1\n    ```python\n    ^\nSyntaxError: invalid syntax",
+      "latency": 22.73
+    },
+    {
+      "id": "code_binary_search",
+      "category": "coding",
+      "passed": true,
+      "score": 1.0,
+      "detail": "PASS",
+      "latency": 6.75
+    },
+    {
+      "id": "code_roman_numerals",
+      "category": "coding",
+      "passed": true,
+      "score": 1.0,
+      "detail": "PASS",
+      "latency": 19.55
+    },
+    {
+      "id": "code_lru_cache",
+      "category": "coding",
+      "passed": true,
+      "score": 1.0,
+      "detail": "PASS",
+      "latency": 20.71
+    },
+    {
+      "id": "reason_balls",
+      "category": "reasoning",
+      "passed": false,
+      "score": 0.0,
+      "detail": "",
+      "latency": 5.2
+    },
+    {
+      "id": "reason_fence",
+      "category": "reasoning",
+      "passed": false,
+      "score": 0.0,
+      "detail": "",
+      "latency": 5.99
+    },
+    {
+      "id": "reason_coins",
+      "category": "reasoning",
+      "passed": false,
+      "score": 0.0,
+      "detail": "",
+      "latency": 5.71
+    },
+    {
+      "id": "reason_gsm_apples",
+      "category": "reasoning",
+      "passed": true,
+      "score": 1.0,
+      "detail": "30",
+      "latency": 3.63
+    },
+    {
+      "id": "reason_gsm_train",
+      "category": "reasoning",
+      "passed": false,
+      "score": 0.0,
+      "detail": "",
+      "latency": 5.42
+    },
+    {
+      "id": "reason_code_trace",
+      "category": "reasoning",
+      "passed": false,
+      "score": 0.0,
+      "detail": "",
+      "latency": 5.26
+    },
+    {
+      "id": "reason_code_trace2",
+      "category": "reasoning",
+      "passed": true,
+      "score": 1.0,
+      "detail": "[1, 9, 25]",
+      "latency": 0.31
+    },
+    {
+      "id": "reason_logic",
+      "category": "reasoning",
+      "passed": false,
+      "score": 0.0,
+      "detail": "",
+      "latency": 5.25
+    },
+    {
+      "id": "reason_probability",
+      "category": "reasoning",
+      "passed": false,
+      "score": 0.0,
+      "detail": "",
+      "latency": 5.31
+    },
+    {
+      "id": "reason_big_o",
+      "category": "reasoning",
+      "passed": true,
+      "score": 1.0,
+      "detail": "O(log n)",
+      "latency": 0.19
+    }
+  ]
+}
